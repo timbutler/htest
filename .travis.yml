@@ -5,7 +5,7 @@ go:
 
 env:
   global:
-  - VERSIO
+  - VERSION: "`cat VERSION`"
   
 os:
   - linux
