@@ -3,7 +3,6 @@ go:
 - 1.7
 os:
 - linux
-- osx
 install:
 - go get github.com/Sirupsen/logrus
 deploy:
