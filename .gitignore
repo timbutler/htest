@@ -1,0 +1,8 @@
+
+# VS Code local history
+.history
+.vscode
+
+# Binary Files
+debug 
+htest
