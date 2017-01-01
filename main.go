@@ -84,7 +84,7 @@ func updatevar(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	log.SetLevel(log.DebugLevel)
-	log.Info("[HTest] HTTP Test Tool - 1.0 NOV16")
+	log.Info("[HTest] HTTP Test Tool - 1.1 JAN17")
 
 	// Default settings and command line options
 	port := flag.Int("port", 8000, "The HTTP port to listen on, default is 8000")
