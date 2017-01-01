@@ -1,0 +1,24 @@
+language: go
+
+go:
+  - 1.7
+
+env:
+  global:
+  - VERSIO
+  
+os:
+  - linux
+  - osx
+
+install:
+- go get github.com/Sirupsen/logrus
+
+deploy:
+  provider: releases
+  api_key: 
+      - secure: dKsy5IBSdeTwkT6uEkzt6yj2wPWLVoJ0/7ozv4ggsV8gJq8fsGmRJh7WE33fclWIpmVqfShUteQCOxBlCuzD3x5M36I7TjKeqsAbtC+oiRQoAyZ2AchYRzymEm0kSVRwnJLAEhL8P0JkGfOo2Jp6STNqCREQxwXud0MCiaeYqSdPzBisQaUTv3ArJSHJEJPHlk6YU1/9In+OflVMk8jNrqg+SOCKJRXDsHEJRQunXU1IVzv91400DibLHMauhpNkonpUFFkSHXsQBE/e445Ar9NjVry7KuGw25CSdfa0jBXzrgdYiTGiYoiazY23LfJvABEG7pLzTOF+/0T6ZbzHhWMSgoAG3K5zDCTNDyWOr2K3fTxeHSd3uKwFSb6Q5UMFdM8vU7O2yFnD+1n2OqcepMMkneQhu95QAFuV+t3jtxid/3EuWGcRcG1JUdtBrSbmBDBvoWlcR+RJrBm+zQLyY6DxNl+q2Q/vYEMoXUAsOiwO0Wv6DOSmhsEd5NSW9ap5kQ5UMBRVVf8+PXRnBH2bklU7H6B+4agglSfzgVIjgfWgYzxYl6yOf8KQ4WwtQ0E+qyRIaPLIejIhGOOaDsl3vnpLYIBlOkAK/s35gIwJ45wyvM2F0a1bkEabwhUtY9XeaOSOKaM0+xOl1pT/GrTp5ZTRNC+4whY5Pt3jNr6wfQA=
+  file: htest
+  skip_cleanup: true
+  on:
+    tags: true
