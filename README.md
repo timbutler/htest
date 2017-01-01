@@ -1,6 +1,8 @@
 # HTest
-[HTest] - HTTP Testing Tool
+HTTP Testing Tool
 -------
+
+[![Build Status](https://travis-ci.org/timbutler/htest.svg?branch=master)](https://travis-ci.org/timbutler/htest)
 
 This is a very simple tool designed to be a HTTP endpoint for load balancer testing. By default, the htttrack listens on port 8000 and serves a very basic HTML page.
 
