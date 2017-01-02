@@ -80,6 +80,7 @@ The intent isn't to produce the world's fastest http server, but to simply ensur
  - Basic sanitisation of the variables
  - Add basic unit tests
  - Create Docker instance
+ - Add HAProxy / Nginx examples
  - Add binary releases for Windows / OSX
  - Add build / dev guide to this README
 
