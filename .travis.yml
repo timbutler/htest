@@ -3,9 +3,7 @@ go:
 - 1.7
 os:
 - linux
-install:
-- go get -t ./...
-- go test -v ./...
+script:  
 - go build -o bin/linux/htest
 - ls -lah bin/linux/htest
 deploy:
