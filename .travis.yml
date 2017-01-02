@@ -6,11 +6,12 @@ os:
 install:
 - go get -t ./...
 - go test -v ./...
-- go build
+- go build -o bin/linux/htest
+- ls -lah bin/linux/htest
 deploy:
   provider: releases
   api_key:
     secure: HS5nVxMlTi7NydPWJpq4dRd+2s9UIfFO3zOzkyBejtLCQs4PYKge7a8ii6prDyarbbkpTwyt6uTleLUthEXqklguedPpi3MhmPufKNBFXOE3bRa5nbEJarutcLWno+fiYEcVSJoqsTbaExZdVR5W0mkyxdq9SnoDGjv43HUlYv+6Olp05XiAbFfKj0eO85a1vxJHiBQMDJd+yo4Y0VtUD9+y2A8o8Q9trsNxbb4BNLzxqd/RE2BpBS9rDXqRsroz7W0O9C4XRx02VPxJWhmY0XgQUV6d7Xb6J3p1dkFnQYIDNT3J++uiWVwjWRwRLXusjQBOUS+NjfJF6FwNuQuVQoC75fcetcJd+W41ZmKhD1NrEZi2HJxzmmM2m7JhMRGu5aeieG+X9NgBgjtC3s1xj2v48XLn0dTxJu47jlkBDP8xbdr1mAQPl3QZQ8yCwhXd/bpV9THSTKqLaAOB/Dlmq/De9xfUJpkXQt3ZZYINh1JgjK71paR8OUa58leifYQcINxn5Wdw1MZ53h4mI2JJ2frHVhr1vCCTGL5d3OM/QO9KXl0tIbYc19bKUykSO434NmIxOSvlFmuwgp99MEJjymrJMATL3cZCJu3+IBMZxVJT6lQFs9CbBuDUIYKKmCzpvNkvQNDewC9DulpP040eQ7TVD4kUflSb7+a4VRAiBqY=
-  file: htest
+  file: bin/linux/htest
   on:
     repo: timbutler/htest
