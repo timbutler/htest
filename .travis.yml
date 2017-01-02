@@ -3,8 +3,6 @@ go:
 - 1.7
 os:
 - linux
-install:
-- go get github.com/Sirupsen/logrus
 deploy:
   provider: releases
   api_key:
