@@ -3,6 +3,10 @@ go:
 - 1.7
 os:
 - linux
+install:
+- go get -t ./...
+- go test -v ./...
+- go build
 deploy:
   provider: releases
   api_key:
