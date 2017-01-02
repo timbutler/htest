@@ -78,8 +78,10 @@ The intent isn't to produce the world's fastest http server, but to simply ensur
 
 ## TODO
  - Basic sanitisation of the variables
- - Add Binary releases + Travis CI
+ - Add basic unit tests
  - Create Docker instance
+ - Add binary releases for Windows / OSX
+ - Add build / dev guide to this README
 
 ## License 
 
